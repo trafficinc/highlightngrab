@@ -19,3 +19,6 @@ LinkHighlighter.init({<br />
 &nbsp;&nbsp;//console.log(value);<br />
 &nbsp;}<br />
 });<br />
+
+What it looks like:
+![Alt text](/screenshots/highlighterJS-01.PNG?raw=true "")
