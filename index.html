@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>HighLighter JS</title>
+
+	<style>
+		span {
+			background-color: yellow;
+	    }
+	</style>
+
+</head>
+<body>
+  	<h1>Demo Text</h1>
+
+	  <p id="myp">The programming languages used to build the web often find their way into apps, too. That’s largely due to software that allows developers to "reuse" the code they write for the web in products they build to run on operating systems like Linux, Android, Windows, and macOS.
+
+But Apple has a reason not to like this recycling of web technology. It wants its Mac App Store to be filled with apps that you can’t find anywhere else, not apps that are available on every platform. With a recent policy change, the company has made it a little more difficult for developers to submit apps containing web code.</p>
+  
+  <div>
+    <p>
+    The Mac App Store has quietly started rejecting apps made with a popular tool called Electron that allows developers to base all of their apps on the web-based code. Some of the most popular apps in the App Store, like Slack, Spotify, Discord, and WhatsApp, fall into this category.
+    </p>
+  </div>
+
+  
+  Selection:
+  <br>
+  <textarea id="sel" rows="3" cols="50"></textarea>
+
+  <button id="saveBtn">Save</button>
+
+
+
+<script src="highlighter.js"></script>
+<script>
+	LinkHighlighter.init({
+	  el: "#myp",
+	  saveBtn : "#saveBtn"
+	});
+</script>
+	
+</body>
+</html>
