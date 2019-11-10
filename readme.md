@@ -1,4 +1,9 @@
-## Options
+## Link Highlighter
+Will highlight selected text in DOM element, say "p"/paragraph element and allow to select the text, then grab it to store it or manipulate it further.<br />
+### See index.html for implementation<br /><br />
+
+## This is experimental<br />
+## Options<br />
 
 `el` can be element: example "p" for paragraph, and class or id.
 
