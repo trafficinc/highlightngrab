@@ -103,10 +103,12 @@ var LinkHighlighter = (function () {
         opts.lhValue(store.get('getSelectionText'));
       }
 
-      var regex = new RegExp(store.get('getSelectionText').toString());
-      var newText = p.innerHTML.replace(regex, function ($xax) {
-        return "<span>" + $xax + "</span>";
-      });
+      if (undefined !== store.get('getSelectionText')) {
+        var regex = new RegExp(store.get('getSelectionText').toString());
+        var newText = p.innerHTML.replace(regex, function ($xax) {
+          return "<span>" + $xax + "</span>";
+        });
+      }
      
       domstore.addNewDom(newText);
       pageElem.innerHTML = newText;
